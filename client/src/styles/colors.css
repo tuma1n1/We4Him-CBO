@@ -1,0 +1,37 @@
+:root {
+  --purple: #6A1B9A;
+  --blue: #1976D2;
+  --light-bg: #F4F4F4;
+  --white: #FFFFFF;
+  --dark-text: #333333;
+  --accent: #E1BEE7; /* Light purple for soft highlights */
+  --nav-height: 60px;
+  --max-width: 1200px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+h1, h2 {
+  color: var(--purple);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/src/images/watermark.png'); /* Replace with your watermark image path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.15; /* Low opacity for watermark effect */
+  pointer-events: none;
+  z-index: -1;
+}
