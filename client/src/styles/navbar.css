@@ -44,6 +44,41 @@
   text-decoration: underline;
 }
 
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--purple);
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 0;
+
+    /* hidden by default */
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/*
 @media (max-width: 768px) {
   .navbar-links {
     flex-direction: column;
@@ -52,3 +87,4 @@
     gap: 0.5rem;
   }
 }
+*/
