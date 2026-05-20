@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .programmes {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.6);

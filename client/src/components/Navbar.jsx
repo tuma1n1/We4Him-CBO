@@ -5,7 +5,9 @@ import '../styles/navbar.css';
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">WE4HIM CBO</div>
+      <Link to="/" className="navbar-logo">
+        <img src="/we4him_Logo_Xbg.png" alt="WE4HIM CBO Logo" className="logo-image" />
+      </Link>
       <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>

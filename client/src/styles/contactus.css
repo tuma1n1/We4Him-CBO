@@ -1,12 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .contact {
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 6.5rem auto;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.contact p {
+  margin: 0.8rem 0;
+  line-height: 1.7;
+}
+
 .contact h2 {
   color: var(--blue);
+}
+
+.contact-person-card {
+  max-width: 400px;
+  margin: 2rem auto 4rem;
+  padding: 2rem;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  border-radius: 14px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.contact-person-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.contact-person-photo {
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 1rem;
+
+  border: 4px solid var(--purple);
+
+  background: linear-gradient(
+    135deg,
+    var(--purple),
+    var(--blue)
+  );
+}
+
+.contact-person-card h3 {
+  margin-bottom: 0.4rem;
+
+  color: var(--purple);
+}
+
+.contact-person-card span {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  color: var(--blue);
+
+  font-weight: 600;
+}
+
+.contact-person-card p {
+  margin: 0.7rem 0;
+  line-height: 1.6;
+
+  color: var(--dark-text);
+}
+
+.contact-link {
+  color: var(--blue);
+
+  text-decoration: none;
+
+  font-weight: 500;
+
+  transition: color 0.3s ease,
+              border-bottom 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--purple);
+
+  border-bottom: 1px solid var(--purple);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 5rem 1rem 2rem;
+  }
+
+  .contact-person-card {
+    margin: 1.5rem 1rem 3rem;
+  }
 }

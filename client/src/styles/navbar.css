@@ -14,6 +14,18 @@
   /*text-decoration: none;*/
 }
 
+.logo-image {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+}
+
 .navbar-links {
   list-style: none;
   display: flex;

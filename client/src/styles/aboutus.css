@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .about {
   max-width: 900px;
   margin: 2rem auto;

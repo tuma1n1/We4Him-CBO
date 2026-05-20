@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .news {
   max-width: 800px;
   margin: 2rem auto;
@@ -49,4 +53,29 @@
   margin-top: 1.5rem;
   line-height: 1.6;
   color: var(--dark-text);
+}
+
+.event-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(106, 27, 154, 0.15);
+}
+
+.event-header {
+  margin-bottom: 1rem;
+}
+
+.event-header h3 {
+  color: var(--purple);
+  margin-bottom: 0.3rem;
+}
+
+.event-header span {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.news-explanation {
+  margin-top: 1rem;
+  line-height: 1.7;
 }
