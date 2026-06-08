@@ -9,9 +9,7 @@ function Collaborators() {
       <ul>
         <li>Government of Kenya</li>
         <li>Migori County Government</li>
-        <li>Migori County CSOs Forum</li>
-        <li>Boy Child Empowerment Kenya – Trans Nzoia County</li>
-        <li>Zinduka – Nyamira County</li>
+        <li>Boy Child Empowerment Kenya (BEKO) – Trans Nzoia County</li>
       </ul>
     </div>
   );
@@ -69,6 +67,10 @@ function GetInvolved() {
     <>
       <Helmet>
         <title>About Us | WE4HIM CBO</title>
+        <link
+          rel="canonical"
+          href="https://we4him-cbo.vercel.app/get-involved"
+        />
         <meta
           name="description"
           content="Get involved with We4Him CBO. Help us in our mission to Empower Bous and Men in Migori County by joining, volunteering or partering with us."

@@ -23,7 +23,10 @@ function Navbar() {
         />
       </Link>
 
-      <div className="hamburger" onClick={toggleMenu}>
+      <div 
+        className={`hamburger ${menuOpen ? 'active' : ''}`} 
+        onClick={toggleMenu}
+      >
         ☰
       </div>
 

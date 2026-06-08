@@ -40,7 +40,7 @@ html {
 
 .news-image:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transform: scale(1.03);
+  transform: scale(1.23);
 }
 
 .news-image.enlarged {
@@ -56,9 +56,10 @@ html {
 }
 
 .event-section {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 2px solid rgba(106, 27, 154, 0.15);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  scroll-margin-top: 100px;
+  border-bottom: 2px solid rgba(106, 27, 154, 0.15);
 }
 
 .event-header {
@@ -78,4 +79,62 @@ html {
 .news-explanation {
   margin-top: 1rem;
   line-height: 1.7;
+}
+
+.programme-section {
+  margin-bottom: 3rem;
+}
+
+.programe-section-lone {
+  margin-bottom: 0.5rem;
+}
+
+.programme-section h3 {
+  color: var(--purple);
+
+  margin-bottom: 1rem;
+}
+
+.programme-card {
+  background: rgba(255, 255, 255, 0.7);
+
+  padding: 1.5rem;
+
+  border-radius: 14px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.programme-card h4 {
+  color: var(--blue);
+
+  margin-bottom: 1rem;
+}
+
+.programme-card ul {
+  padding-left: 1.5rem;
+
+  margin: 1rem 0;
+}
+
+.programme-card li {
+  margin-bottom: 0.5rem;
+}
+
+.ongoing-empty {
+  min-height: 120px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: #666;
+
+  font-style: italic;
+
+  background: rgba(255,255,255,0.85);
 }

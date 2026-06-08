@@ -6,6 +6,10 @@ function ContactUs() {
     <>
       <Helmet>
         <title>Contact Us | WE4HIM CBO</title>
+        <link
+          rel="canonical"
+          href="https://we4him-cbo.vercel.app/contact"
+        />
         <meta
           name="description"
           content="Contact Us, help our misson to empower boys and men."

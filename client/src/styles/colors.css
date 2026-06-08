@@ -8,7 +8,7 @@ html {
   --light-bg: #F4F4F4;
   --white: #FFFFFF;
   --dark-text: #333333;
-  --accent: #E1BEE7; /* Light purple for soft highlights */
+  --accent: #e1bee7; /* Light purple for soft highlights */
   --nav-height: 60px;
   --max-width: 1200px;
 }

@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://we4him-cbo.vercel.app/sitemap.xml

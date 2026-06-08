@@ -7,11 +7,13 @@ import GetInvolved from './pages/GetInvolved';
 import ContactUs from './pages/ContactUs';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
+import ScrollToTop from "./components/ScrollToTop";
 import './styles/colors.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
