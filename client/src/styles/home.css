@@ -432,7 +432,7 @@ body {
 
   grid-template-columns: repeat(6, 1fr);
 
-  grid-auto-rows: clamp(70px, 12vw, 180px);
+  grid-auto-rows: clamp(50px, 10vw, 180px);
 
   gap: clamp(0.3rem, 1vw, 1rem);
 }
@@ -579,11 +579,7 @@ body {
   }
 
   /* Collage */
-  .collage-grid {
-    transform: scale(0.9);
-
-    transform-origin: top center;
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -675,11 +671,7 @@ body {
   }
 
   /* COLLAGE */
-  .collage-grid {
-    transform: scale(0.75);
-
-    transform-origin: top center;
-  }
+  
 
   .collage-wrapper {
     height: 250px; /* adjust if needed */
@@ -713,7 +705,7 @@ body {
 @media (max-width: 480px) {
 
   .hero {
-    min-height: 760px;
+    min-height: 650px;
     padding: 1.5rem 1rem;
   }
 
@@ -722,11 +714,11 @@ body {
   }
 
   .hero-title-box h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-title-box h2 {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
 
     letter-spacing: 1px;
   }
@@ -737,18 +729,14 @@ body {
     gap: 0.7rem;
   }
 
-  .tag-1 { font-size: 1rem; }
-  .tag-2 { font-size: 0.85rem; }
-  .tag-3 { font-size: 1.1rem; }
-  .tag-4 { font-size: 0.9rem; }
-  .tag-5 { font-size: 1rem; }
+  .tag-1 { font-size: 1.2rem; }
+  .tag-2 { font-size: 1.05rem; }
+  .tag-3 { font-size: 1.3rem; }
+  .tag-4 { font-size: 1.1rem; }
+  .tag-5 { font-size: 1.2rem; }
 
   /* COLLAGE */
-  .collage-grid {
-    transform: scale(0.68);
-
-    transform-origin: top center;
-  }
+  
 
   .collage-wrapper {
     height: 200px; /* adjust if needed */
