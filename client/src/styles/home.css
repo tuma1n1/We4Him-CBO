@@ -420,7 +420,7 @@ body {
 /* COLLAGE GRID */
 .collage-wrapper {
   width: 100%;
-  overflow-x: hidden;
+  overflow: visible;
   display: flex;
   justify-content: center;
   position: relative;
@@ -430,9 +430,11 @@ body {
 .collage-grid {
   display: grid;
 
+  width: 100%;
+
   grid-template-columns: repeat(6, 1fr);
 
-  grid-auto-rows: clamp(50px, 10vw, 180px);
+  grid-auto-rows: clamp(60px, 10vw, 180px);
 
   gap: clamp(0.3rem, 1vw, 1rem);
 }
@@ -451,11 +453,11 @@ body {
 
   transition: all 0.4s ease;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.17);
 }
 
 .collage-grid img:hover {
-  transform: scale(1.15);
+  transform: scale(1.03);
 
   box-shadow: 0 12px 28px rgba(0,0,0,0.2);
 }
@@ -673,10 +675,7 @@ body {
   /* COLLAGE */
   
 
-  .collage-wrapper {
-    height: 250px; /* adjust if needed */
-  }
-
+  
   .cta-button {
     width: 100%;
   }
@@ -737,11 +736,6 @@ body {
 
   /* COLLAGE */
   
-
-  .collage-wrapper {
-    height: 200px; /* adjust if needed */
-  }
-    
   .impact-stats {
     grid-template-columns: 1fr;
   }
