@@ -679,16 +679,14 @@ body {
 
   /* COLLAGE */
   .collage-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 130px;
-    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+    gap: 0.4rem;
   }
 
   .collage-grid img {
     grid-column: unset !important;
     grid-row: unset !important;
-    width: 100%;
-    height: 100%;
   }
 
   .collage-grid img:nth-child(1),
@@ -765,14 +763,14 @@ body {
 
   /* COLLAGE */
   .collage-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 120px;
-    gap: 0.4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 90px;
+    gap: 0.3rem;
   }
 
   .collage-grid img {
     grid-column: unset !important;
-    grid-row: unset !important;
+    grid-row: unset !important; 
   }
   
   .impact-stats {
@@ -791,8 +789,14 @@ body {
 
 @media (max-width: 400px) {
   .collage-grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 110px;
+    gap: 0.3rem;
+  }
+
+  .collage-grid img {
+    grid-column: unset !important;
+    grid-row: unset !important;
   }
 
   .hero-tags {
