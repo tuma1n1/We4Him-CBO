@@ -420,7 +420,7 @@ body {
 /* COLLAGE GRID */
 .collage-wrapper {
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   position: relative;
@@ -674,9 +674,17 @@ body {
 
   /* COLLAGE */
   .collage-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 160px;
     gap: 0.5rem;
+  }
+
+  .collage-grid img {
+    grid-column: unset !important;
+    grid-row: unset !important;
+    width: 100%;
+    height: 100%;
   }
 
   .collage-grid img:nth-child(1),
@@ -754,7 +762,7 @@ body {
   /* COLLAGE */
   .collage-grid {
     grid-template-columns: 1fr;
-    grid-auto-rows: 220px;
+    grid-auto-rows: 200px;
   }
   
   .impact-stats {
@@ -768,5 +776,18 @@ body {
 
   .home-cta-message p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .collage-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  .hero-tags {
+    width: 100%;
+    max-width: 290px;
+    height: 260px;
   }
 }
