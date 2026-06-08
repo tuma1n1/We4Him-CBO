@@ -389,6 +389,8 @@ body {
   margin: 5rem auto;
 
   padding: 0 2rem;
+
+  overflow-x: hidden;
 }
 
 .section-header {
@@ -416,15 +418,23 @@ body {
 }
 
 /* COLLAGE GRID */
+.collage-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 
 .collage-grid {
   display: grid;
 
   grid-template-columns: repeat(6, 1fr);
 
-  grid-auto-rows: 180px;
+  grid-auto-rows: clamp(70px, 12vw, 180px);
 
-  gap: 1rem;
+  gap: clamp(0.3rem, 1vw, 1rem);
 }
 
 /* CREATE COLLAGE EFFECT */
@@ -499,7 +509,7 @@ body {
 .collage-footer {
   text-align: center;
 
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 /* BUTTON */
@@ -570,10 +580,10 @@ body {
 
   /* Collage */
   .collage-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 180px;
-  }
+    transform: scale(0.9);
 
+    transform-origin: top center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -665,32 +675,14 @@ body {
   }
 
   /* COLLAGE */
-
-  .photo-collage {
-    padding: 0 1rem;
-  }
-
   .collage-grid {
-    grid-template-columns: repeat(2, 1fr);
+    transform: scale(0.75);
 
-    grid-auto-rows: 160px;
-
-    gap: 0.8rem;
+    transform-origin: top center;
   }
 
-  /* KEEP PUZZLE EFFECT */
-
-  .collage-grid img:nth-child(1) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .collage-grid img:nth-child(4) {
-    grid-row: span 2;
-  }
-
-  .collage-grid img:nth-child(7) {
-    grid-column: span 2;
+  .collage-wrapper {
+    height: 250px; /* adjust if needed */
   }
 
   .cta-button {
@@ -752,45 +744,16 @@ body {
   .tag-5 { font-size: 1rem; }
 
   /* COLLAGE */
-
   .collage-grid {
+    transform: scale(0.68);
 
-    grid-template-columns: 1fr;
-
-    gap: 0.8rem;
+    transform-origin: top center;
   }
 
-  .collage-grid img {
-    width: 100%;
-
-    border-radius: 14px;
+  .collage-wrapper {
+    height: 200px; /* adjust if needed */
   }
-
-  /* Alternate heights for Pinterest look */
-
-  .collage-grid img:nth-child(odd) {
-    height: 220px;
-  }
-
-  .collage-grid img:nth-child(even) {
-    height: 320px;
-  }
-
-  .collage-grid img:nth-child(1),
-  .collage-grid img:nth-child(2),
-  .collage-grid img:nth-child(3),
-  .collage-grid img:nth-child(4),
-  .collage-grid img:nth-child(5),
-  .collage-grid img:nth-child(6),
-  .collage-grid img:nth-child(7),
-  .collage-grid img:nth-child(8),
-  .collage-grid img:nth-child(9),
-  .collage-grid img:nth-child(10) {
-
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
+    
   .impact-stats {
     grid-template-columns: 1fr;
   }

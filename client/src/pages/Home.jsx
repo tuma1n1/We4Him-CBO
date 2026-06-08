@@ -167,19 +167,21 @@ function Home() {
             </p>
           </div>
 
-          <div className="collage-grid">
+          <div className="collage-wrapper">
+            <div className="collage-grid">
 
-            <img src="/Images/IMG 70.png" alt="International Day of the Boy Child" />
-            <img src="/Images/IMG 48.png" alt="Substance Use Prevention Week" />
-            <img src="/Images/IMG 41.png" alt="World Environment Day" />
-            <img src="/Images/IMG 30.png" alt="International Day of the Boy Child 2025" />
-            <img src="/Images/IMG 23.png" alt="World AIDS Day" />
-            <img src="/Images/IMG 2.jpg" alt="International Day of the Boy Child 2024" />
-            <img src="/Images/IMG 65.png" alt="Community Activity" />
-            <img src="/Images/IMG 35.png" alt="Mentorship Programme" />
-            <img src="/Images/IMG 61.png" alt="Community Programme" />
-            <img src="/Images/IMG 76.png" alt="Community Engagement" />
+              <img src="/Images/IMG 70.png" alt="International Day of the Boy Child" />
+              <img src="/Images/IMG 48.png" alt="Substance Use Prevention Week" />
+              <img src="/Images/IMG 41.png" alt="World Environment Day" />
+              <img src="/Images/IMG 30.png" alt="International Day of the Boy Child 2025" />
+              <img src="/Images/IMG 23.png" alt="World AIDS Day" />
+              <img src="/Images/IMG 2.jpg" alt="International Day of the Boy Child 2024" />
+              <img src="/Images/IMG 65.png" alt="Community Activity" />
+              <img src="/Images/IMG 35.png" alt="Mentorship Programme" />
+              <img src="/Images/IMG 61.png" alt="Community Programme" />
+              <img src="/Images/IMG 76.png" alt="Community Engagement" />
 
+            </div>
           </div>
 
           <div className="collage-footer">
